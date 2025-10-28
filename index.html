@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Misterios Criminales - Resuelve el Caso</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                    <path d="M20 5L25 15H35L27 22L30 32L20 26L10 32L13 22L5 15H15L20 5Z" fill="currentColor"/>
+                </svg>
+                <h1>Misterios Criminales</h1>
+            </div>
+            <div class="stats">
+                <span class="stat">Casos Resueltos: <strong id="solved-count">0</strong></span>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <div class="intro" id="intro">
+                <h2 class="title">Bienvenido, Detective</h2>
+                <p class="subtitle">¿Tienes lo necesario para resolver los casos más oscuros?</p>
+                <button class="btn-primary" id="start-btn">Comenzar Investigación</button>
+            </div>
+
+            <div class="case-container hidden" id="case-container">
+                <div class="case-header">
+                    <span class="case-number" id="case-number">Caso #1</span>
+                    <span class="difficulty" id="difficulty">Dificultad: Media</span>
+                </div>
+
+                <div class="case-content">
+                    <h2 class="case-title" id="case-title"></h2>
+                    <div class="case-description" id="case-description"></div>
+
+                    <div class="clues-section">
+                        <h3 class="section-title">🔍 Pistas</h3>
+                        <div class="clues-grid" id="clues-grid"></div>
+                    </div>
+
+                    <div class="suspects-section">
+                        <h3 class="section-title">👤 Sospechosos</h3>
+                        <div class="suspects-grid" id="suspects-grid"></div>
+                    </div>
+
+                    <div class="answer-section">
+                        <h3 class="section-title">¿Quién es el culpable?</h3>
+                        <div class="answer-options" id="answer-options"></div>
+                    </div>
+
+                    <div class="result hidden" id="result">
+                        <div class="result-content">
+                            <h3 id="result-title"></h3>
+                            <p id="result-explanation"></p>
+                            <button class="btn-secondary" id="next-case-btn">Siguiente Caso</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <div class="particles" id="particles"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
